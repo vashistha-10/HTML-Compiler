@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>HTML Compiler</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+		/>
+	</head>
+	<body>
+		<div class="row" style="margin: 10px">
+			<div class="col-lg-6">
+				<center><h3>Type your HTML here</h3></center>
+				<textarea
+					id="htmltaker"
+					style="width: 100%; height: 450px; resize: none"
+				></textarea
+				><br /><br />
+				<center>
+					<button class="btn btn-primary" onclick="func()">Convert</button>
+				</center>
+				<br /><br />
+			</div>
+			<div class="col-lg-6">
+				<center><h3>Your Output Will Appear Here</h3></center>
+				<div id="outputHtml"></div>
+			</div>
+		</div>
+	</body>
+	<script>
+		function func() {
+			var x = document.getElementById("htmltaker").value;
+			document.getElementById("outputHtml").innerHTML = x;
+		}
+	</script>
+</html>
